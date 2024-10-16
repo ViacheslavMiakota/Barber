@@ -1,0 +1,25 @@
+footer > .contain {
+  position: absolute;
+  top: auto;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(247, 247, 247);
+  min-height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 29px;
+  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    min-height: 79px;
+    padding: 30px 130px;
+    gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 77px;
+    padding: 30px 300px;
+    gap: 10px;
+  }
+}

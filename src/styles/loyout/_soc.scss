@@ -1,0 +1,50 @@
+.soc {
+  position: absolute;
+  width: 65px;
+  display: none;
+  align-items: flex-end;
+  justify-content: flex-start;
+  @include tablet {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+}
+
+.soc__list {
+  @include tablet {
+    transform: rotate(-90deg) translate(-19px);
+    transform-origin: top left;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    &::before {
+      content: "";
+      width: 60px;
+      height: 1px;
+      background-color: var(--second-title-color);
+      margin-right: 40px;
+      margin-left: 30px;
+    }
+  }
+}
+
+.soc__item + .soc__item {
+  margin-left: 20px;
+}
+
+.soc__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--second-title-color);
+  transition: color 500ms ease;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,15 @@
+.contact-wrap {
+  display: flex;
+  background-color: #191c26;
+  background-image: linear-gradient(rgba(54, 40, 40, 0.474), rgba(104, 99, 90, 0.534)),
+    url(../../assets/images/bgd.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  max-width: 1280px;
+  .container {
+    display: flex;
+    margin: 130px 55px;
+    justify-content: center;
+  }
+}

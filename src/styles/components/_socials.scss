@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 50%;
+  @extend %align-list;
+  justify-content: center;
+  fill: var(--second-btn-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

@@ -1,0 +1,17 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  justify-content: center;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

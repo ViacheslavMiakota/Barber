@@ -1,0 +1,90 @@
+.hero {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  padding: 0;
+}
+
+.hero.container {
+  padding-left: 0;
+  padding-right: 15px;
+  @include tablet {
+    width: 720px;
+  }
+  @include desktop {
+    max-width: 1073px;
+  }
+}
+
+.hero-content {
+  background-color: var(--second-title-color);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url(../../assets/images/slider.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 208px 31px 183px;
+  flex-grow: 1;
+  @include retina {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+      url(../../assets/images/slider-dt-2x.jpg);
+  }
+  @include tablet {
+    padding: 280px 70px 234px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+      url(../../assets/images/slider-tab.jpg);
+    @include retina {
+      background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+        url(../../assets/images/slider-tab-2x.jpg);
+    }
+  }
+  @include desktop {
+    padding: 272px 96px 206px 96px;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+      url(../../assets/images/slider-dt.jpg);
+    @include retina {
+      background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+        url(../../assets/images/slider-dt-2x.jpg);
+    }
+  }
+}
+
+.hero-content__top-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--typical-margin);
+  color: var(--adres-color);
+  &::before {
+    content: "\2014";
+    width: 40px;
+    font-size: 18px;
+    height: 40px;
+    margin-right: 10px;
+    transform: scaleX(2);
+    @extend %align-list;
+    justify-content: center;
+  }
+}
+.hero-content__title {
+  color: var(--main-btn-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--typical-margin);
+  @extend %align-list;
+  @include desktop {
+    font-size: 72px;
+    line-height: 1.16;
+  }
+}
+.hero-content__bottom-text {
+  color: var(--adres-color);
+  max-width: 306px;
+  @include tablet {
+    max-width: 349px;
+  }
+  @include desktop {
+    max-width: 400px;
+  }
+}
